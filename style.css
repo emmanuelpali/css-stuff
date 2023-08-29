@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #c4d3c4;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.glass-hero-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass-hero-container::before{
+    content: '';
+    position: absolute;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    background: linear-gradient(#00ffe6, #9e18ca);
+    top: 15%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.glass-hero-container::after{
+    content: '';
+    position: absolute;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    background: linear-gradient( #3a30a8, #b79fa3 );
+    top: 85%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.glass-hero-container .square-1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #9e18ca;
+    top: 80%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.glass-hero-container .square-2{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: #9e18ca;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.glass-hero-container .square-3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #9e18ca;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.glass-hero-container .box {
+    height: 75vh;
+    width: 70%;
+    padding: 0,20px;
+    background: rgba(255,255,255,0.1);
+    z-index: 10;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.7);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10,10,10,0.75, green, blue, alpha);
+}
+
+.glass-hero-container .box .nav {
+    height: 10%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+.glass-hero-container .box .nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.glass-hero-container .box .nav ul li:hover {
+    color: #04f204;
+}
+
+.content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    padding: 20px;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+/*end of hero css and begining of login form*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    background: linear-gradient(#00ffe6, #9e18ca);
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
