@@ -130,17 +130,23 @@
     padding: 0;
     font-family: 'poppins',sans-serif;
 }
+
+.infinitescroll,
 .login-form{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    
+}
+
+.login-form {
     background: linear-gradient(#00ffe6, #9e18ca);
     background-position: center;
     background-size: cover;
 }
+
+
 .form-box{
     position: relative;
     width: 400px;
@@ -169,7 +175,7 @@ h2{
     position: absolute;
     top: 50%;
     left: 5px;
-    transform: translateY(-50%);
+    transform: translateY(-10%);
     color: #fff;
     font-size: 1em;
     pointer-events: none;
@@ -239,4 +245,25 @@ button{
 }
 .register p a:hover{
     text-decoration: underline;
+}
+
+
+.infinitescroll {
+    background: #000;
+}
+
+.infinitescroll .container-fluid {
+    width: 70%;
+    height: 300px;
+    margin: 10px auto;
+    border: 1px solid #eee;
+    background: url("/images/snow.jpg");
+    background-size: 500px 300px;
+    animation: scroll 2s linear infinite;
+}
+
+@keyframes scroll {
+	to {
+		background-position: -500px 0;
+	}
 }
